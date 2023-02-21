@@ -212,19 +212,52 @@ main .fa-solid{
 
 .planning h2 {
     margin-top: 5rem;
+
 }
 
 .planning img {
 
+}
+.fa-solid.fa-arrow-down{
+    margin: 3rem 0 0 0;
+    color: black;
+    font-size: 15px;
+    border: solid var(--lr-secondary);
+    background-color: var(--lr-secondary);
+    padding: 1rem;
+    border-radius: 50%;
 }
 
 .card_2 {
     background-color: white;
     border-radius: 50px;
     margin-top: 5rem;
+    padding: 2rem;
+    text-align: center;
 }
 
 /*#endregion planning */
+/*#region footer */
+footer{
+    background-color: var(--lr-footer);
+    width: 100%;
+    height: 15rem;
+}
+footer .container{
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    text-align: center;
+    gap: 2rem; 
+    padding-top: 1rem;
+
+}
+footer a{
+    color: var(--lr-secondary);
+}
+/*#endregion footer */
 /*#region media_query */
 @media screen and (max-width: 480px) {
     .ml_col_12 {
@@ -234,8 +267,9 @@ main .fa-solid{
     }
 
     .card_2 {
-        margin-top: 0;
+        margin-top: 2rem;
     }
+
 
     header li {
         display: none;
@@ -254,12 +288,25 @@ main .fa-solid{
     .img{
         margin-bottom: -2.3rem;
     }
+    footer .container{
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
-
+    footer .container{
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 
-@media screen and (max-width: 1160px) {}
+@media screen and (min-width: 1160px) {
+    .card_2{
+   height: 50%;
+    }
+}
 
 /*#endregion media_query */
