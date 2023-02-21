@@ -13,6 +13,9 @@
     --lr-footer-text: #fdc15f;
     --lr-box: #62b3fe8a;
 }
+body {
+    font-family: 'PT Sans', sans-serif;
+  }
 img{
     max-width: 100%;
 }
@@ -116,6 +119,14 @@ section .row {
     border-radius: 25px;
     text-decoration: none;
     color: black;
+}
+.button_white_lilla {
+padding: 1rem 3rem 1rem 3rem;
+    background-color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    color: var(--lr-secondary);
+    letter-spacing: 0.1rem;
 }
 /*#endregion common */
 /*#region header */
@@ -258,6 +269,36 @@ footer a{
     color: var(--lr-secondary);
 }
 /*#endregion footer */
+/*#region call_to_action */
+.call_to_action{
+background-color: var(--lr-secondary);
+}
+.call_to_action .container{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 3rem 0;
+    width: 100%;
+}
+.call_to_action .get_started{
+    color:#d6d3ff;
+    letter-spacing: 0.1rem;
+}
+.call_to_action h3{
+    color: white;
+}
+.call_to_action h2{
+    color: var(--lr-footer-text);
+    font-size: 60px;
+}
+.call_to_action p{
+    color: white;
+}
+.call_to_action .ipertext{
+    color: white;
+}
+/*#endregion call_to_action */
 /*#region media_query */
 @media screen and (max-width: 480px) {
     .ml_col_12 {
@@ -269,7 +310,6 @@ footer a{
     .card_2 {
         margin-top: 2rem;
     }
-
 
     header li {
         display: none;
@@ -293,6 +333,12 @@ footer a{
         padding-left: 1rem;
         padding-right: 1rem;
     }
+    .call_to_action .container{
+        width: 100%;
+    }
+    .call_to_action .row{
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -301,9 +347,12 @@ footer a{
         padding-left: 1rem;
         padding-right: 1rem;
     }
+    .call_to_action .row{
+        width: 50%;
+    }
 }
 
-@media screen and (min-width: 1160px) {
+@media screen and (max-width: 1160px) {
     .card_2{
    height: 50%;
     }
