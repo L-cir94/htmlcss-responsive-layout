@@ -36,8 +36,10 @@ img {
     max-width: 1152px;
     margin: auto;
 }
+
 .row {
     display: flex;
+    justify-content: center;
     width: 100%;
     flex-wrap: wrap;
 }
@@ -132,13 +134,14 @@ section .row {
     color: var(--lr-secondary);
     letter-spacing: 0.1rem;
 }
-.button_lilla_white{
+
+.button_lilla_white {
     padding: 1rem 1rem 1rem 1rem;
     background-color: var(--lr-secondary);
     border-radius: 25px;
     text-decoration: none;
-    color:white;
-    letter-spacing: 0.1rem;  
+    color: white;
+    letter-spacing: 0.1rem;
 }
 
 /*#endregion common */
@@ -181,13 +184,16 @@ ul {
 .debug .menu_right {
     border: dashed;
 }
+
 /*#region about us */
-.about h2{
+.about h2 {
     color: var(--lr-secondary);
 }
-.about .container{
+
+.about .container {
     padding: 5rem 1rem;
 }
+
 /* #endregion about us */
 /*#endregion header */
 /*#region demo */
@@ -264,6 +270,7 @@ main .fa-solid {
     padding: 2rem;
     text-align: center;
 }
+
 /*#endregion planning */
 /*#region call_to_action */
 .call_to_action {
@@ -327,26 +334,72 @@ footer a {
 /*#endregion footer */
 /*#region about */
 
-.about img{
+.about img {
     border-radius: 50%;
     width: 50%;
 }
-.about h3{
+
+.about h3 {
     color: var(--lr-secondary);
 }
-.about .col_6{
-gap: 2rem;
+
+.about .col_6 {
+    gap: 2rem;
 }
-.about .row{
+
+.about .row {
     align-items: flex-start;
 }
+
 /*#endregion about */
+/*#region benefits */
+.benefits {
+    background-color: var(--lr-secondary);
+}
+
+.benefits .container {
+    padding: 3rem 0;
+}
+
+.benefits h3 {
+    text-align: center;
+    color: white;
+}
+
+.index {
+    color: var(--lr-secondary);
+    font-size: 50px;
+}
+
+.benefits .card {
+    background-color: white;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.benefits h4 {
+    color: var(--lr-secondary);
+}
+
+.card .button_lilla_white {
+
+    padding: 1rem 4rem;
+}
+.card{
+margin-top: 1rem;
+border-radius: 10%;
+}
+/*#endregion benefits */
 /*#region media_query */
 @media screen and (max-width: 480px) {
     .ml_col_12 {
         width: 100%;
         flex-direction: column;
         gap: 1rem;
+    }
+
+    .col_12 {
+        width: 100%;
     }
 
     .card_2 {
@@ -388,6 +441,7 @@ gap: 2rem;
         width: 80%;
     }
 
+
 }
 
 @media screen and (max-width: 768px) {
@@ -400,12 +454,15 @@ gap: 2rem;
     .call_to_action .row {
         width: 50%;
     }
-    .about .img{
+
+    .about .img {
         text-align: center;
     }
-    .about .container{
+
+    .about .container {
         width: 100%;
     }
+
 
 }
 
@@ -413,12 +470,15 @@ gap: 2rem;
     .card_2 {
         height: 50%;
     }
-    .about .img{
+
+    .about .img {
         text-align: center;
     }
-    .about .container{
+
+    .about .container {
         width: 80%;
     }
+
 }
 
 /*#endregion media_query */
